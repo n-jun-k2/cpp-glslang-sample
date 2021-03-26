@@ -32,4 +32,5 @@ include files
 | TSwizzleSelectors<typename selectorType> | |
 | TIdMaps | TMap<TString, int>の配列オブジェクト. getter/setterのみ |
 | TNumericFeatures | シェーダー機能の状態を表すオブジェクト。|
-| TIntermediate | |
+| TIntermediate | ツリーの解析と構築を支援するヘルパー関数のセット
+ |
