@@ -46,12 +46,12 @@ include file : `Public/ShaderLang.h`
 ---
 | name | return | override |
 | --- | --- | --- |
-| glslang::GetVersion | struct Version | |
-| glslang::GetEsslVersionString | const char* | |
-| glslang::GetGlslVersionString | const char* | |
+| glslang::GetVersion | struct Version | glslangのバージョンを取得 |
+| glslang::GetEsslVersionString | const char* | ESSLのバージョンを取得 |
+| glslang::GetGlslVersionString | const char* | GLSLのバージョンを取得 |
 | glslang::GetKhronosToolId | int | |
-| glslang::InitializeProcess | bool | |
-| glslang::FinalizeProcess | void | |
+| glslang::InitializeProcess | bool | 使用する前にプロセスごとに一度だけ、呼び出す |
+| glslang::FinalizeProcess | void |　プロセスごとに1度だけ呼び出し、全てを破壊します。 |
 
 ## STRUCT list
 ---
@@ -72,7 +72,7 @@ namespace `glslang`
 | --- | --- |
 | TProgram | 一緒にリンクされるシェーダーのセットごとに1つのTProgramを作成します。 |
 | TIoMapResolver | リンク後にバインディングレイアウトをカスタマイズできます。 |
-| TObjectReflection | A reflection database and its interface, consistent with the OpenGL API reflection queries. Data needed for just a single object at the granularity exchanged by the reflection API. |
+| TObjectReflection | OpenGL APIのリフレクション・クエリと一致したリフレクション・データベースとそのインターフェース |
 | TShader | プログラムにリンクするシェーダーごとに1つのTShaderを作成します。|
 | TShader::Includer | includeハンドラーへのインターフェース。 |
 | TShader::Includer::IncludeResult | IncludeResultには、解決されたソースの名前とコンテンツが含まれます |
