@@ -1,6 +1,8 @@
 # cpp-glslang-sample
 Sample project for running GLS Lang project under Windows environment.
 
+[Reference](https://github.com/KhronosGroup/glslang)
+
 ## Required software
 - [Visual Studo 2019 (Install all "Desktop development with C ++")](https://visualstudio.microsoft.com/ja/downloads/)
 - [CMake (3.20.0-rc5)](https://cmake.org/download/)
