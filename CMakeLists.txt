@@ -11,6 +11,11 @@ set(GLSLANGLIBS
     OSDependent
     SPIRV
     SPVRemapper
+    SPIRV-Tools
+    SPIRV-Tools-opt
+    SPIRV-Tools-link
+    SPIRV-Tools-reduce
+    SPIRV-Tools-shared
 )
 
 file(
